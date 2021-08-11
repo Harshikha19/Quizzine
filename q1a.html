@@ -1,0 +1,131 @@
+<!--quiz part-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript Quiz Project</title>
+<link rel="stylesheet" type="text/css" href="q1a.css">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+<header >
+	<p id="heading">TAKE A QUIZ!!</p>
+</header>
+<div class="container">
+	<form name="quizForm" onsubmit="return submitAnswers()">
+	<p class="question">1.Hydroscope is an instrument that used to_______</p>
+	<ol>
+		<input type="radio" name="q1"value="a" id="q1a">
+		<label>Atmospheric humidity</label><br>
+		<input type="radio" name="q1" value="b" id="q1b">
+		<label>Density of liquid</label><br>
+		<input type="radio" name="q1" value="c" id="q1c">
+		<label>Sound of water</label><br>
+		<input type="radio" name="q1" value="d" id="q1d">
+		<label>See object under water</label><br>
+		
+	</ol>
+	<p class="question">2.A piece of wood is float above water then up thrust on it will be
+	<ol>
+		<input type="radio" name="q2" value="a"id="q2a">
+		<label>Equal to weight of wood</label><br>
+		<input type="radio" name="q2" value="b" id="q2b">
+		<label>Less than weight of wood</label><br>
+		<input type="radio" name="q2" value="c" id="q2c">
+		<label>More than weight of wood</label><br>
+		<input type="radio" name="q2" value="d" id="q2d">
+		<label>Zero</label><br>
+	
+	</ol>
+	<p class="question">3.What is the unit of the physical quantity "Inductance"?
+	<ol>
+		<input type="radio" name="q3" value="a" id="q3a">
+		<label>Weber</label><br>
+		<input type="radio" name="q3" value="b" id="q3b">
+		<label> Henry</label><br>
+		<input type="radio" name="q3" value="c" id="q3c">
+		<label>Farad</label><br>
+		<input type="radio" name="q3" value="c" id="q3d">
+		<label>Tesla </label><br>
+		
+	</ol>
+	
+	<p class="question">4.Human saliva contains an enzyme called "salivary amylase" that breaks down starch to give sugar. It is present in the mouth. There is another area which uses this enzyme. Which of the following is it?
+	<ol>
+		<input type="radio" name="q4" value="a" id="q4a">
+		<label>Small intestine </label><br>
+		<input type="radio" name="q4" value="b"id="q4b">
+		<label>Large intestine </label><br>
+		<input type="radio" name="q4" value="c" id="q4c">
+		<label>Pancreas</label><br>
+		<input type="radio" name="q4" value="d" id="q4d">
+		<label>Liver</label><br>
+
+	</ol>
+	<p class="question">5. Blood Pressure in humans is measured using the___________________
+	<ol>
+		<input type="radio" name="q5" value="a" id="q5a">
+		<label>Thermometer</label><br>
+		<input type="radio" name="q5" value="b" id="q5b">
+		<label>Sphygmomanometer</label><br>
+		<input type="radio" name="q5" value="c" id="q5c">
+		<label>Anemometer</label><br>
+		<input type="radio" name="q5" value="d" id="q5d">
+		<label>Anapesticmeter</label><br>
+	</ol>
+	<p class="question">6.When the electric impulse travels along the axon and reaches the other end called the synaptic terminal, this impulse triggers the release of ?
+	<ol>
+		<input type="radio" name="q6" value="a" id="q6a">
+		<label>Vesicles   </label><br>
+		<input type="radio" name="q6" value="b" id="q6b">
+		<label>Cleft</label><br>
+		<input type="radio" name="q6" value="c" id="q6c">
+		<label>Mitochondria</label><br>
+		<input type="radio" name="q6" value="d" id="q6d">
+		<label>All of the above</label><br>
+	</ol>
+	<p class="question">7.The ending of a nerve cell used to acquire information from our environment is called 
+	<ol>
+		<input type="radio" name="q7" value="a" id="q7a">
+		<label>Neucleus </label><br>
+		<input type="radio" name="q7" value="b" id=" q7b">
+		<label> Nerve ending</label><br>
+		<input type="radio" name="q7" value="c" id="q7c">
+		<label>Dendrite </label><br>
+		<input type="radio" name="q7" value="d" id="q7d">
+		<label>Axon </label><br>
+		
+	</ol>
+	<p class="question">8.Receptors used to detect taste are known as
+	<ol>
+		<input type="radio" name="q8" value="a"id="q8a">
+		<label>gustory receptors</label><br>
+		<input type="radio" name="q8" value="b" id="q8b">
+		<label>olfactory receptors</label><br>
+		<input type="radio" name="q8" value="c"id="q8c">
+		<label>nerve cell receptors</label><br>
+		<input type="radio" name="q8" value="d" id="q8d">
+		<label>All of the above</label><br>
+		
+	</ol>
+	
+	<div class="submitter">
+          <input type="submit" class="quizSubmit" id="submitButton" value="Submit Answers">
+    </div>
+	<div id="results"></div>
+	 
+	</form>
+	</div>
+	<script src="q1a.js" ></script>
+	  
+	</body>
+	<footer id="footer">
+	Published By: Harshikha Pal<br>
+	Contact information: <a href="mailto:23harshu2000@gmail" id="footer_link">23harshu2000@gmail.com</a>.<br>
+	&copy;H@RSHIKHApal<br>
+    </footer>
+	
+</html>
+
